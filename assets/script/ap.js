@@ -57,10 +57,12 @@ var game = {
         if (game.counter === 0) {
             console.log("TIME UP");
             game.done();
+            debugger;
         }
     },
 
     start: function () {
+        console.log('hitting start function')
         timer = setInterval(game.countdown, 1000);
 
         $("#secondwrap").prepend(
